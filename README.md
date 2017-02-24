@@ -4,12 +4,12 @@ O produto xy-inc foi desenvolvido a fim de proporcionar agilidade no desenvolvim
 O desenvolvedor mobile pode criar todos modelos do aplicativo a ser desenvolvido através de um formulário simples.
 Ao incluir novo modelo toda estrutura de acesso a base de dados é gerada no servidor e persistida na base de dados, permitindo que o CRUD para este modelo possa ser executado através de requisições Rest.
 
-# Pré-requisitos para Execução:
+## Pré-requisitos para Execução:
   1) Instacia do banco de dados MongoDB rodando na porta 27017
   
   2) Servidor Node.js instalado
 
-# Execução: 
+## Execução: 
  
  Para iniciar a aplicação basta navegar até o diretório raiz, que contem o arquivo package.json, e executar o comando:
  
