@@ -1,0 +1,73 @@
+<div class="grid-form" style="margin-bottom: 0;">
+    <div class="grid-form1">
+        <div class="container">
+            <div class="row">
+                <h1>Modelos Cadastrados</h1>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Nome</label>
+                    <input class="form-control" type="text"
+                           ng-model="name">
+                </div>
+                <div class="form-group col-md-4" style="margin-top: 2.2%">
+                    <button type="button" class="btn btnSubmit" ng-click="list()">Buscar Modelo</button>
+                    <a class="btn btn-default" ui-sref="main.home">Novo Modelo</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <table id="modelTable" st-safe-src="models" st-table="displayedModels" class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th colspan="5">
+                            <input st-search="" class="form-control"
+                                   placeholder="global search ..." type="text"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th st-sort="name">Nome</th>
+                        <th st-sort="description">Descri&ccedil;&atilde;o</th>
+                        <th st-sort="category">Categoria</th>
+                        <th st-sort="price">Pre&ccedil;o</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in displayedModels">
+                        <td style="width: 15%">{{row.name}}</td>
+                        <td style="width: 15%">{{row.description}}</td>
+                        <td style="width: 15%">{{row.category}}</td>
+                        <td style="width: 15%">{{row.price}}</td>
+                        <td style="width: 5%">
+                            <button type="button"
+                                    class="btn btn-sm btn-default btnEdit"
+                                    ng-click="editModel(row)">
+                                <i class="fa fa-file-word-o">
+                                </i>
+                            </button>
+                        </td>
+                        <td style="width: 5%">
+                            <button type="button"
+                                    class="btn btn-sm btn-default btnRemove"
+                                    ng-click="deleteModel(row)">
+                                <i class="fa fa-times-circle-o">
+                                </i>
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <div st-pagination="" st-items-by-page="15" st-displayed-pages="7"></div>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

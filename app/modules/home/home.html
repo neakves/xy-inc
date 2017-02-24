@@ -1,0 +1,36 @@
+<div class="grid-form">
+    <div class="grid-form1">
+        <div class="container">
+            <div class="row">
+                <h1>Inclus&atilde;o de Modelo</h1>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Nome</label>
+                    <input class="form-control" type="text"
+                           ng-model="name">
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Pre&ccedil;o</label>
+                    <input class="form-control" type="text"
+                           ng-model="price">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Descri&ccedil;&atilde;o</label>
+                    <textarea class="form-control"  cols="40" rows="5" ng-model="description"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Categoria</label>
+                    <input class="form-control" type="text" ng-model="category">
+                </div>
+                <div class="form-group col-md-4" style="margin-top: 2.2%">
+                    <button type="button" class="btn btnSubmit" ng-click="sendModel()">Enviar Modelo</button>
+                    <a class="btn btn-default" ui-sref="main.home-list">Lista de Modelos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="xyInc">
+
+<head>
+
+    <base href="/" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Model Creator</title>
+
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <!-- build:css css/index.min.css -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="public/lib/angular-toastr/dist/angular-toastr.css" rel="stylesheet">
+    <link href="public/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/system.css" rel="stylesheet">
+    <!-- endbuild -->
+
+</head>
+
+<body>
+
+<div id="main-form" ui-view></div>
+
+<!-- build:js js/angular-script.min.js -->
+<script src="public/lib/angular/angular.js"></script>
+<script src="public/lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="public/lib/angular-smart-table/dist/smart-table.js"></script>
+<script src="public/lib/ngstorage/ngStorage.js"></script>
+<script src="public/lib/angular-toastr/dist/angular-toastr.tpls.js"></script>
+
+<!-- endbuild -->
+
+<!-- build:js js/page-script.min.js -->
+<script src="env.js"></script>
+<script src="app.js"></script>
+<script src="config/app-config.js"></script>
+<script src="modules/home/home.js"></script>
+<script src="modules/home/home-routs.js"></script>
+<script src="services/model-service.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/component-script.min.js -->
+<script src="public/lib/jquery/dist/jquery.js"></script>
+<script src="public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
+
