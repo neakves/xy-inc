@@ -5,7 +5,7 @@ O desenvolvedor mobile pode criar todos modelos do aplicativo a ser desenvolvido
 Ao incluir novo modelo toda estrutura de acesso a base de dados é gerada no servidor e persistida na base de dados, permitindo que o CRUD para este modelo possa ser executado através de requisições Rest.
 
 # Pré-requisitos para Execução:
-  1) Instacia do banco de dados MongoDb rodando na porta 27017
+  1) Instacia do banco de dados MongoDB rodando na porta 27017
   
   2) Servidor Node.js instalado
 
